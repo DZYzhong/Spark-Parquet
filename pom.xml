@@ -59,5 +59,10 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <artifactId>spark-sql_2.10</artifactId>
             <version>1.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-catalyst_2.10</artifactId>
+            <version>1.2.0</version>
+        </dependency>
     </dependencies>
 </project>
