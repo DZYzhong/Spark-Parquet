@@ -43,6 +43,7 @@ public class JavaSparkSQL {
           @Override
           public Person call(String line) {
             String[] parts = line.split(",");
+
             Person person = new Person();
             person.setName(parts[0]);
             person.setAge(Integer.parseInt(parts[1].trim()));
