@@ -63,7 +63,6 @@ public class JavaSparkSQL {
         return "Name: " + row.getString(0);
       }
     }).collect();
-
     for (String name: teenagerNames) {
       System.out.println(name);
     }
