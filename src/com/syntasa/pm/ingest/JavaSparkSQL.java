@@ -86,6 +86,7 @@ public class JavaSparkSQL {
     for (String name: teenagerNames) {
       System.out.println(name);
     }
+
     System.out.println("=== Data source: JSON Dataset ===");
 // A JSON dataset is pointed by path.
 // The path can be either a single text file or a directory storing text files.
