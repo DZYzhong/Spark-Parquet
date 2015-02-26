@@ -104,6 +104,7 @@ public class JavaSparkSQL {
     peopleFromJsonFile.registerTempTable("people");
 // SQL statements can be run by using the sql methods provided by sqlCtx.
     SchemaRDD teenagers3 = sqlCtx.sql("SELECT name FROM people WHERE age >= 13 AND age <= 19");
+
 // The results of SQL queries are JavaSchemaRDDs and support all the normal RDD operations.
 // The columns of a row in the result can be accessed by ordinal.
     teenagerNames = teenagers3.toJavaRDD().map(new Function<Row, String>() {
