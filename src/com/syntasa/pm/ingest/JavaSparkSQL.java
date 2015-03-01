@@ -95,7 +95,6 @@ public class JavaSparkSQL {
     SchemaRDD peopleFromJsonFile = sqlCtx.jsonFile(path);
 // Because the schema of a JSON dataset is automatically inferred, to write queries,
 // it is better to take a look at what is the schema.
-
     peopleFromJsonFile.printSchema();
 // The schema of people is ...
 // root
